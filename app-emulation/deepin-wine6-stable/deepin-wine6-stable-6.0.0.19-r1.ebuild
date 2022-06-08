@@ -5,7 +5,7 @@ EAPI=7
 
 inherit unpacker
 
-DESCRIPTION="Deepin wine6 stable"
+DESCRIPTION="The Deepin wine6 stable"
 HOMEPAGE="https://www.deepin.org"
 
 COMMON_URI="https://community-store-packages.deepin.com/appstore/pool/appstore/d/${PN}"
