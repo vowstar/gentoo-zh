@@ -7,6 +7,9 @@ inherit desktop unpacker xdg
 DESCRIPTION="Document Viewer for CAJ, KDH, NH, TEB and PDF format"
 
 HOMEPAGE="https://cajviewer.cnki.net"
+# download.cnki.net only serves this deb to China mainland addresses. Foreign
+# hosts get a TLS reset or HTTP 418, so upstream looks dead from CI even though
+# the file is live and its hash is unchanged. Do not last rite on that basis.
 SRC_URI="https://download.cnki.net/cajPackage/CAJLinuxPackage/${PN}_${PV}_amd64.deb"
 S="${WORKDIR}"
 
